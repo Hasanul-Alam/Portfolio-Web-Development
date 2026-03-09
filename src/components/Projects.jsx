@@ -184,15 +184,17 @@ const ProjectCard = ({ project }) => {
           </h3>
 
           <div className="flex gap-3">
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noreferrer"
-              className="text-zinc-500 hover:text-white hover:bg-zinc-800 p-1.5 rounded-full transition-all"
-              title="View Code"
-            >
-              <FiGithub size={18} />
-            </a>
+            {project.github.length > 0 && (
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noreferrer"
+                className="text-zinc-500 hover:text-white hover:bg-zinc-800 p-1.5 rounded-full transition-all"
+                title="View Code"
+              >
+                <FiGithub size={18} />
+              </a>
+            )}
             <a
               href={project.live}
               target="_blank"
