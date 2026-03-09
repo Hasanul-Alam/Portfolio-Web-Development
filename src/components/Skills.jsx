@@ -11,6 +11,12 @@ import {
   SiHtml5,
   SiCss3,
   SiTypescript,
+  SiRedux,
+  SiExpress,
+  SiMongoose,
+  SiZod,
+  SiDocker,
+  SiGithub,
 } from "react-icons/si";
 import { FiCpu, FiLayout, FiDatabase } from "react-icons/fi";
 import ScrollReveal from "../ScrollBar/Scrollbar";
@@ -18,14 +24,16 @@ import ScrollReveal from "../ScrollBar/Scrollbar";
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Frontend Engineering",
+      title: "Frontend Frameworks",
       icon: FiLayout,
       skills: [
         { name: "React", icon: SiReact, color: "text-cyan-400" },
         { name: "Next.js", icon: SiNextdotjs, color: "text-white" },
-        { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-cyan-400" },
-        { name: "HTML5", icon: SiHtml5, color: "text-orange-500" },
-        { name: "CSS3", icon: SiCss3, color: "text-blue-500" },
+        { name: "React Native", icon: SiReact, color: "text-cyan-400" },
+        { name: "Redux", icon: SiRedux, color: "text-cyan-400" },
+        // { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-cyan-400" },
+        // { name: "HTML5", icon: SiHtml5, color: "text-orange-500" },
+        // { name: "CSS3", icon: SiCss3, color: "text-blue-500" },
       ],
     },
     {
@@ -33,8 +41,10 @@ const Skills = () => {
       icon: FiDatabase,
       skills: [
         { name: "Node.js", icon: SiNodedotjs, color: "text-green-500" },
+        { name: "Express.js", icon: SiExpress, color: "text-green-500" },
         { name: "MongoDB", icon: SiMongodb, color: "text-green-500" },
-        { name: "Firebase", icon: SiFirebase, color: "text-yellow-500" },
+        { name: "Mongoose", icon: SiMongoose, color: "text-green-500" },
+        { name: "Zod", icon: SiZod, color: "text-green-500" },
       ],
     },
     {
@@ -44,6 +54,8 @@ const Skills = () => {
         { name: "JavaScript", icon: SiJavascript, color: "text-yellow-400" },
         { name: "Typescript", icon: SiTypescript, color: "text-blue-400" },
         { name: "Git", icon: SiGit, color: "text-red-500" },
+        { name: "Github", icon: SiGithub, color: "text-red-500" },
+        { name: "Docker", icon: SiDocker, color: "text-red-500" },
       ],
     },
   ];

@@ -142,7 +142,7 @@ const Preloader = ({ onLoadingComplete }) => {
       </div>
 
       <div className="w-full max-w-md">
-        <div className="h-[1px] w-full bg-zinc-900 relative overflow-hidden">
+        <div className="h-[px] w-full bg-zinc-900 relative overflow-hidden">
           <motion.div
             className="absolute top-0 left-0 h-full bg-white"
             initial={{ width: "0%" }}
