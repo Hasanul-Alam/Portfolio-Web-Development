@@ -31,9 +31,6 @@ const Skills = () => {
         { name: "Next.js", icon: SiNextdotjs, color: "text-white" },
         { name: "React Native", icon: SiReact, color: "text-cyan-400" },
         { name: "Redux", icon: SiRedux, color: "text-cyan-400" },
-        // { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-cyan-400" },
-        // { name: "HTML5", icon: SiHtml5, color: "text-orange-500" },
-        // { name: "CSS3", icon: SiCss3, color: "text-blue-500" },
       ],
     },
     {
@@ -63,12 +60,12 @@ const Skills = () => {
   return (
     <ScrollReveal>
       <section id="skills" className=" relative overflow-hidden">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#27272a_1px,transparent_1px),linear-gradient(to_bottom,#27272a_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-[0.1] pointer-events-none" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#27272a_1px,transparent_1px),linear-gradient(to_bottom,#27272a_1px,transparent_1px)] bg-size-[4rem_4rem] opacity-[0.1] pointer-events-none" />
 
         <div className="max-w-6xl mx-auto px-6 relative z-10">
           <div className="mb-12 md:mb-16">
             <div className="inline-flex items-center gap-2 mb-4">
-              <span className="w-8 h-[1px] bg-blue-500"></span>
+              <span className="w-8 h-[px] bg-blue-500"></span>
               <span className="text-blue-400 font-mono text-sm tracking-widest uppercase">
                 Tech Stack
               </span>

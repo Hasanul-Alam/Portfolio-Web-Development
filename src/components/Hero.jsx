@@ -64,7 +64,9 @@ const Hero = () => {
           <div className="flex flex-col items-end gap-1">
             <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-zinc-900/50 border border-zinc-800">
               <FiMapPin className="text-zinc-400 text-xs" />
-              <span className="text-xs font-mono text-zinc-300">Dhaka, BD</span>
+              <span className="text-xs font-mono text-zinc-300">
+                Dhaka, Bangladesh
+              </span>
             </div>
 
             <div className="flex items-center gap-2 text-[10px] font-mono text-zinc-500 mr-1">

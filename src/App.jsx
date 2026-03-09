@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -32,7 +33,7 @@ const App = () => {
 
       <div className="fixed inset-0 z-0 pointer-events-none">
         <div className="absolute inset-0 opacity-[0.03] bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"></div>
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-size-[24px_24px]"></div>
       </div>
 
       {!isLoading && (
@@ -106,7 +107,7 @@ const Preloader = ({ onLoadingComplete }) => {
       initial={{ opacity: 1 }}
       exit={{ opacity: 0, y: -50, filter: "blur(10px)" }}
       transition={{ duration: 0.8, ease: "easeInOut" }}
-      className="fixed inset-0 z-[9999] flex flex-col items-center justify-between bg-zinc-950 p-10 font-mono"
+      className="fixed inset-0 z-9999 flex flex-col items-center justify-between bg-zinc-950 p-10 font-mono"
     >
       <div className="w-full flex justify-between text-[10px] text-zinc-600 uppercase tracking-widest">
         <span>HASANUL.DEV</span>

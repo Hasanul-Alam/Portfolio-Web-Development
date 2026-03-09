@@ -3,88 +3,51 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FiGithub, FiExternalLink, FiCode, FiLayers } from "react-icons/fi";
 import ScrollReveal from "../ScrollBar/Scrollbar";
 
-import kidzImg from "../assets/kidz.png";
-import utilityImg from "../assets/smart.png";
-import dragonImg from "../assets/news.png";
-import bookImg from "../assets/book.png";
-import supportImg from "../assets/customer.png";
-import ecoImg from "../assets/eco.png";
-import englishImg from "../assets/english.png";
-import loanlinkImg from "../assets/microcredx.png";
+import todoImg from "../assets/todo.png";
+import paradiseViewImg from "../assets/paradise-view.png";
+import lancepilotImg from "../assets/lancepilot.png";
 
 const projectsData = [
   {
-    name: "MicroCredX",
-    category: "FinTech",
-    desc: "A comprehensive web-based microloan management system designed for NGOs. It enables role-based dashboards for borrowers, managers, and admins with payment integration and real-time tracking.",
-    tech: ["React", "Node.js", "MongoDB", "Stripe", "Framer Motion"],
-    live: "https://microcredx.vercel.app/",
-    github: "https://github.com/Hasanul-Alam/MicroCredX-Project-FrontendPart",
-    image: loanlinkImg,
+    name: "Lancepilot",
+    category: "Whatsapp Cold Outreach",
+    desc: "A React-based cold outreach platform for WhatsApp marketing. Features contact management, message templates, and campaign tracking with a responsive design.",
+    tech: [
+      "React",
+      "Next.js",
+      "Payment Integration",
+      "Shad-CN",
+      "Custom Authentication",
+    ],
+    live: "https://lancepilot.com",
+    github: "",
+    image: lancepilotImg,
   },
   {
-    name: "Smart Utility BD",
+    name: "Hotel Management System",
     category: "Management",
-    desc: "A MERN-based utility management system that centralizes monthly Electricity, Gas, Water, and Internet bills. Features include real-time updates, filtering, and PDF generation.",
-    tech: ["React", "Firebase", "Tailwind CSS", "DaisyUI"],
-    live: "https://smart-utility-bd.netlify.app/",
-    github: "https://github.com/Hasanul-Alam/SmartUtility-Project-ClientPart",
-    image: utilityImg,
-  },
-  {
-    name: "Kidz Corner",
-    category: "E-Commerce",
-    desc: "A full-featured toy e-commerce platform. Users can browse toys, view details, and manage their collection. Includes secure authentication and protected routes.",
-    tech: ["React", "Firebase Auth", "Tailwind CSS", "DaisyUI"],
-    live: "https://kidz-corner-webapp.netlify.app/",
-    github: "https://github.com/Hasanul-Alam/Kidz-Corner-With-Firebase",
-    image: kidzImg,
-  },
-  {
-    name: "Dragon News",
-    category: "Media",
-    desc: "A modern news portal allowing users to explore articles by category. Features Firebase authentication for reading full stories and a distraction-free reading layout.",
-    tech: ["React", "Firebase Auth", "Tailwind CSS"],
-    live: "https://dragon-news-firebase22.netlify.app/",
-    github: "https://github.com/Hasanul-Alam/Dragon-News-With-Firebase-Project",
-    image: dragonImg,
-  },
-  {
-    name: "Book Vibe",
-    category: "Directory",
-    desc: "A book discovery interface where users can browse a curated collection. Features smooth navigation between read lists and wishlists using React Router.",
-    tech: ["React", "React Router", "Tailwind CSS"],
-    live: "https://book-vibe-with-react-20022.netlify.app/",
+    desc: "A full-featured hotel management system. Users can manage rooms, employees, and customers. Includes secure authentication and protected routes.",
+    tech: [
+      "React",
+      "Firebase",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Tailwind CSS",
+    ],
+    live: "https://hotel-paradise-view.netlify.app",
     github:
-      "https://github.com/Hasanul-Alam/Book-Vibe-With-React-Router-Project",
-    image: bookImg,
+      "https://github.com/Hasanul-Alam/Paradise-View-Hotel-Booking-System-",
+    image: paradiseViewImg,
   },
   {
-    name: "Customer Support App",
-    category: "Dashboard",
-    desc: "A support dashboard for managing customer tickets with status tracking. Interacts with APIs to demonstrate structured state management.",
-    tech: ["React", "API", "Tailwind CSS"],
-    live: "https://customer-support-react-2200.netlify.app/",
-    github: "https://github.com/Hasanul-Alam/Customer-Support-Zone-Using-React",
-    image: supportImg,
-  },
-  {
-    name: "Eco World",
-    category: "Landing Page",
-    desc: "A JavaScript-driven landing page highlighting eco-friendly products. Focuses on DOM manipulation and dynamic content loading.",
-    tech: ["JavaScript", "HTML5", "CSS3"],
-    live: "https://mahfuz5634.github.io/Eco-World-Project/",
-    github: "https://github.com/Hasanul-Alam/Eco-World-Project",
-    image: ecoImg,
-  },
-  {
-    name: "English Shikhi",
-    category: "Education",
-    desc: "Interactive vocabulary learning tool with text-to-speech. Demonstrates public API usage and DOM updates for a lightweight learning experience.",
-    tech: ["JavaScript", "Fetch API", "Tailwind CSS"],
-    live: "https://mahfuz5634.github.io/English-Shikhi-Project/",
-    github: "https://github.com/Hasanul-Alam/English-Shikhi-Project",
-    image: englishImg,
+    name: "Todo App",
+    category: "Productivity",
+    desc: "A sleek todo application with user authentication and real-time data syncing. Built with React and Firebase, it offers a clean interface for managing tasks efficiently.",
+    tech: ["React", "Redux", "Local Storage", "Tailwind CSS", "DaisyUI"],
+    live: "https://hasanultodoapp.netlify.app",
+    github: "https://github.com/Hasanul-Alam/todo-app",
+    image: todoImg,
   },
 ];
 
