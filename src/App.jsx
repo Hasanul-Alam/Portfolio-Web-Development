@@ -5,7 +5,6 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
-import CompetitiveProgramming from "./components/CompetitiveProgramming";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Education from "./components/Education";
@@ -110,7 +109,7 @@ const Preloader = ({ onLoadingComplete }) => {
       className="fixed inset-0 z-[9999] flex flex-col items-center justify-between bg-zinc-950 p-10 font-mono"
     >
       <div className="w-full flex justify-between text-[10px] text-zinc-600 uppercase tracking-widest">
-        <span>MAHFUZ.DEV</span>
+        <span>HASANUL.DEV</span>
         <span>V 1.0.0</span>
       </div>
 

@@ -169,9 +169,6 @@ const Hero = () => {
                     <h3 className="text-white font-bold text-base">
                       Md. Hasanul
                     </h3>
-                    {/* <p className="text-blue-400 text-[10px] font-mono mb-2">
-                      @Mahfuz5634
-                    </p> */}
 
                     <div className="flex items-center gap-3 text-[10px] text-zinc-400 font-mono">
                       <span className="flex items-center gap-1">
