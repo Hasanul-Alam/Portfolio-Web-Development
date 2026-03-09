@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import {
@@ -34,8 +35,8 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen bg-zinc-950 pt-10 pb-20 overflow-hidden flex flex-col justify-center">
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#27272a_1px,transparent_1px),linear-gradient(to_bottom,#27272a_1px,transparent_1px)] bg-[size:40px_40px] opacity-[0.15]"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-zinc-950 via-transparent to-zinc-950"></div>
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#27272a_1px,transparent_1px),linear-gradient(to_bottom,#27272a_1px,transparent_1px)] bg-size-[40px_40px] opacity-[0.15]"></div>
+        <div className="absolute inset-0 bg-linear-to-b from-zinc-950 via-transparent to-zinc-950"></div>
       </div>
 
       <div className="relative z-10 max-w-6xl w-full mx-auto px-6 h-full flex flex-col">
@@ -79,7 +80,7 @@ const Hero = () => {
           </div>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center flex-grow">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center grow">
           <div className="lg:col-span-8 flex flex-col items-start">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -160,14 +161,14 @@ const Hero = () => {
                   </div>
                 </div>
 
-                <div className="relative aspect-[4/5] overflow-hidden">
+                <div className="relative aspect-4/5 overflow-hidden">
                   <img
                     src={image}
                     alt="Hasanul Profile"
                     className="w-full h-full object-cover grayscale opacity-90 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                   />
 
-                  <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-zinc-950 to-transparent pt-10">
+                  <div className="absolute bottom-0 left-0 right-0 p-3 bg-linear-to-t from-zinc-950 to-transparent pt-10">
                     <h3 className="text-white font-bold text-base">
                       Md. Hasanul
                     </h3>

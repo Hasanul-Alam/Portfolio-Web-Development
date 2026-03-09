@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiGithub, FiExternalLink, FiCode, FiLayers } from "react-icons/fi";
@@ -64,12 +65,12 @@ const Projects = () => {
   return (
     <ScrollReveal>
       <section id="projects" className="relative overflow-hidden py-10">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#27272a_1px,transparent_1px),linear-gradient(to_bottom,#27272a_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-[0.1] pointer-events-none" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#27272a_1px,transparent_1px),linear-gradient(to_bottom,#27272a_1px,transparent_1px)] bg-size-[4rem_4rem] opacity-[0.1] pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="mb-12 md:mb-16">
             <div className="inline-flex items-center gap-2 mb-4">
-              <span className="w-8 h-[1px] bg-blue-500"></span>
+              <span className="w-8 h-[px] bg-blue-500"></span>
               <span className="text-blue-400 font-mono text-xs tracking-widest uppercase">
                 Selected Works
               </span>
@@ -167,7 +168,7 @@ const ProjectCard = ({ project }) => {
           className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
         />
 
-        <div className="absolute inset-0 bg-gradient-to-t from-zinc-900/80 via-transparent to-transparent"></div>
+        <div className="absolute inset-0 bg-linear-to-t from-zinc-900/80 via-transparent to-transparent"></div>
 
         <div className="absolute top-3 left-3">
           <span className="px-2 py-1 bg-zinc-950/80 backdrop-blur border border-zinc-700/50 text-[10px] font-mono text-blue-300 rounded uppercase tracking-wider">
