@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useRef, useState, useEffect } from "react";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import {
@@ -16,7 +17,7 @@ const links = [
   { title: "About", icon: <FiUser />, href: "#about" },
   { title: "Projects", icon: <FiCode />, href: "#projects" },
   { title: "Stack", icon: <FiLayers />, href: "#tech-stack" },
-  { title: "CP", icon: <FiTerminal />, href: "#competitive-programming" },
+  // { title: "CP", icon: <FiTerminal />, href: "#competitive-programming" },
   { title: "Contact", icon: <FiMail />, href: "#contact" },
   {
     title: "GitHub",

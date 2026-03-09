@@ -1,16 +1,12 @@
-import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+import { useRef, useState } from "react";
 import {
   FiMail,
   FiPhone,
-  FiMapPin,
-  FiSend,
   FiCheck,
   FiX,
   FiCopy,
   FiGithub,
   FiLinkedin,
-  FiTwitter,
   FiArrowRight,
 } from "react-icons/fi";
 import ScrollReveal from "../ScrollBar/Scrollbar";
@@ -19,29 +15,35 @@ import { motion, AnimatePresence } from "framer-motion";
 export default function Contact() {
   const formRef = useRef(null);
   const [status, setStatus] = useState("idle");
-  const [copied, setCopied] = useState(null); // 'email' or 'phone'
+  const [copied, setCopied] = useState(null);
+  // const [loading, setLoading] = useState(false);
 
-  // Handle Form Submission
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("sending");
 
-    emailjs
-      .sendForm("service_rd8t63u", "template_7s064ds", formRef.current, {
-        publicKey: "zd0PgJxsACTMXoNVn",
-      })
-      .then(
-        () => {
-          setStatus("success");
-          formRef.current.reset();
-          setTimeout(() => setStatus("idle"), 4000);
+    try {
+      const response = await fetch("https://formspree.io/f/xzdpjwjw", {
+        method: "POST",
+        body: JSON.stringify(Object.fromEntries(new FormData(formRef.current))),
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
         },
-        (error) => {
-          console.error(error);
-          setStatus("error");
-          setTimeout(() => setStatus("idle"), 4000);
-        },
-      );
+      });
+
+      if (response.ok) {
+        formRef.current.reset();
+        setStatus("success");
+        setTimeout(() => setStatus("idle"), 4000);
+      } else {
+        setStatus("error");
+        setTimeout(() => setStatus("idle"), 4000);
+      }
+    } catch {
+      setStatus("error");
+      setTimeout(() => setStatus("idle"), 4000);
+    }
   };
 
   // Handle Copy to Clipboard
